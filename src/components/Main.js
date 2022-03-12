@@ -45,6 +45,7 @@ const Main = () => {
       if(a.price > b.price) return -1;
       if(a.price < b.price)  return 1;
       if(a.price === b.price) return 0;
+      return 0
     })
     
     // console.log(list)
@@ -52,12 +53,14 @@ const Main = () => {
       if(a.pricePercentChange > b.pricePercentChange) return -1;
       if(a.pricePercentChange < b.pricePercentChange) return 1;
       if(a.pricePercentChange === b.pricePercentChange) return 0;
+      return 0
     })
     
     const nonTrendingList = [...list].sort((a,b)=>{
       if(a.price > b.price) return 1;
       if(a.price < b.price)  return -1;
       if(a.price === b.price) return 0;
+      return 0
     })
   return (
     <MainContianer>
